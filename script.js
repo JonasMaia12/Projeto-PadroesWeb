@@ -48,9 +48,7 @@ async function carregarPizzas() {
           .replace(/\.[^.]+$/, "");
       }
       card.innerHTML = `
-                  <img src="${imgUrl}" alt="Foto de uma pizza deliciosa número ${
-        index + 1
-      }">
+                  <img src="${imgUrl}" alt="Foto de uma pizza deliciosa ${nomeImagem}">
                   <div class="card-info">
                       <h4>${nomeImagem}</h4>
                       <p>R$ ${(Math.random() * (50 - 30) + 30)
