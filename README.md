@@ -1,5 +1,7 @@
 # 🍕 Bella Pizza - Landing Page Institucional
 
+Imagem de capa: ![Bella Pizza](/Projeto-PadroesWeb.png)
+
 Este projeto consiste em uma aplicação web simples desenvolvida para uma pizzaria fictícia ("Bella Pizza"). O objetivo é oferecer uma solução digital para pequenos negócios locais, focada em apresentação de produtos e facilidade de contato.
 
 O projeto foi desenvolvido seguindo a abordagem **Mobile First**, respeitando padrões de acessibilidade web e integrando consumo de dados externos via API.
@@ -29,6 +31,17 @@ O projeto foi desenvolvido seguindo a abordagem **Mobile First**, respeitando pa
 - **CSS3:** Estilização com variáveis (CSS Variables), Flexbox e CSS Grid.
 - **JavaScript (ES6+):** Lógica para manipulação do DOM e requisições assíncronas (`async/await` e `fetch`).
 - **API Externa:** [Foodish API](https://foodish-api.com/) (para imagens de pizzas).
+
+## 📂 Estrutura de Arquivos
+
+- `index.html`: Arquivo principal com a estrutura da página.
+- `style.css`: Folha de estilos contendo as regras visuais e de responsividade.
+- `script.js`: Script responsável pela conexão com a API e manipulação da galeria.
+- `README.md`: Documentação do projeto.
+
+## 📝 Instruções de Uso
+
+Link para acessar a aplicação: [Bella Pizza - Landing Page](https://jonasmaia12.github.io/Projeto-PadroesWeb/)
 
 ## ⚠️ Observações
 

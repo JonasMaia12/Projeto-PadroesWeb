@@ -157,6 +157,51 @@ nav a:focus {
   background-color: #1ebe57;
 }
 
+/* Botão flutuante WhatsApp */
+.btn-whatsapp-floating {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 56px;
+  height: 56px;
+  background-color: var(--whatsapp-color);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.22);
+  z-index: 1000;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  text-decoration: none;
+}
+
+.btn-whatsapp-floating img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Torna o ícone legível sobre o fundo verde */
+}
+
+.btn-whatsapp-floating:hover,
+.btn-whatsapp-floating:focus {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.28);
+  outline: none;
+}
+
+.btn-whatsapp-floating:focus {
+  box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.12);
+}
+
+@media (max-width: 480px) {
+  .btn-whatsapp-floating {
+    right: 0.85rem;
+    bottom: 0.85rem;
+    width: 48px;
+    height: 48px;
+  }
+}
+
 /* Footer */
 footer {
   text-align: center;

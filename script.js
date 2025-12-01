@@ -38,17 +38,26 @@ async function carregarPizzas() {
       card.className = "pizza-card";
 
       // Injeção de HTML dinâmico com Template String
+      // Extrai o nome da imagem do URL
+      let nomeImagem = "Pizza Especial";
+      if (imgUrl) {
+        const partes = imgUrl.split("/");
+        const nomeArquivo = partes[partes.length - 1]; // ex: pizza1.jpg
+        nomeImagem = nomeArquivo
+          .replace(/(pizza)(\d+)/i, "Pizza $2")
+          .replace(/\.[^.]+$/, "");
+      }
       card.innerHTML = `
-                <img src="${imgUrl}" alt="Foto de uma pizza deliciosa número ${
+                  <img src="${imgUrl}" alt="Foto de uma pizza deliciosa número ${
         index + 1
       }">
-                <div class="card-info">
-                    <h4>Pizza Especial ${index + 1}</h4>
-                    <p>R$ ${(Math.random() * (50 - 30) + 30)
-                      .toFixed(2)
-                      .replace(".", ",")}</p>
-                </div>
-            `;
+                  <div class="card-info">
+                      <h4>${nomeImagem}</h4>
+                      <p>R$ ${(Math.random() * (50 - 30) + 30)
+                        .toFixed(2)
+                        .replace(".", ",")}</p>
+                  </div>
+              `;
       galleryContainer.appendChild(card);
     }
   });
