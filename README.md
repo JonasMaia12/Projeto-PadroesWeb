@@ -1,6 +1,6 @@
 # 🍕 Bella Pizza - Landing Page Institucional
 
-Imagem de capa: ![Bella Pizza](/Projeto-PadroesWeb.png)
+![Bella Pizza](/PadroesWebimg.png)
 
 Este projeto consiste em uma aplicação web simples desenvolvida para uma pizzaria fictícia ("Bella Pizza"). O objetivo é oferecer uma solução digital para pequenos negócios locais, focada em apresentação de produtos e facilidade de contato.
 
